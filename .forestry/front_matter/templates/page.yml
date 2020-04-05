@@ -28,6 +28,7 @@ fields:
   - date-table
   - sponsor-logos
 pages:
+- Speakers/speakers.md
 - call-for-papers.md
 - index.md
 - location.md
