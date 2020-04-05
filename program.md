@@ -1,7 +1,7 @@
 ---
 title: Program
 layout: page
-date: 2018-07-22 00:00:00 +0000
+date: 2018-07-22T00:00:00.000+00:00
 page_sections:
 - template: body-copy
   block: body-copy
@@ -16,8 +16,5 @@ page_sections:
     free_text: "<strong>Conference Opening<br></strong>Welcome from the Conference
       chair - Mr Conference Chair"
   caption: ''
-menu:
-  main:
-    weight: 6
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: Call for papers
 layout: page
-date: 2018-07-24 00:00:00 +0000
+date: 2018-07-24T00:00:00.000+00:00
 page_sections:
 - template: announcement
   block: announcement
@@ -27,8 +27,5 @@ page_sections:
     abstract <a href="http://example.org" title=""><strong>here</strong></a>.</p><p>Please
     note this will take you to a new website for abstract submission. An abstract
     of up to 500 words is required as part of the submission process.</p>
-menu:
-  main:
-    weight: 4
 
 ---

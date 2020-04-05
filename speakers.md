@@ -1,7 +1,7 @@
 ---
 title: Speakers
 layout: page
-date: 2018-07-13 00:00:00 +0000
+date: 2018-07-13T00:00:00.000+00:00
 page_sections:
 - template: body-copy
   block: body-copy
@@ -100,8 +100,5 @@ page_sections:
     person_organisation: Spoiler Pty Ltd
     person_bio: ''
   display: Five max per row
-menu:
-  main:
-    weight: 3
 
 ---

@@ -15,7 +15,7 @@ page_sections:
     shared into the public domain using (CC0)'
 menu:
   main:
-    weight: 7
+    weight: 2
     title: Location
 
 ---

@@ -1,15 +1,13 @@
 ---
 main:
-- weight: 3
-  title: Call for papers
 - weight: 5
-  title: Program
-- weight: 1
-  title: Home
-- weight: 2
-  title: Speakers
-- weight: 6
-  title: Blog
-- weight: 4
   identifier: item_cX4XiDQ
   title: Registration
+- weight: 7
+  title: Blog
+- weight: 3
+  title: Speakers
+- weight: 6
+  title: Program
+- weight: 4
+  title: Call for papers

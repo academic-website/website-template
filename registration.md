@@ -1,7 +1,7 @@
 ---
 title: Registration
 layout: page
-date: 2018-07-19 00:00:00 +0000
+date: 2018-07-19T00:00:00.000+00:00
 page_sections:
 - template: body-copy
   block: body-copy
@@ -35,9 +35,5 @@ page_sections:
   purchase_link: http://example.org/
   max_per_row: '3'
   purchase_link_label: Get your tickets now
-menu:
-  main:
-    weight: 5
-    identifier: item_cX4XiDQ
 
 ---
