@@ -27,5 +27,8 @@ page_sections:
     abstract <a href="http://example.org" title=""><strong>here</strong></a>.</p><p>Please
     note this will take you to a new website for abstract submission. An abstract
     of up to 500 words is required as part of the submission process.</p>
+menu:
+  main:
+    weight: 4
 
 ---

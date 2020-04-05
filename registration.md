@@ -35,5 +35,9 @@ page_sections:
   purchase_link: http://example.org/
   max_per_row: '3'
   purchase_link_label: Get your tickets now
+menu:
+  main:
+    weight: 5
+    identifier: item_cX4XiDQ
 
 ---

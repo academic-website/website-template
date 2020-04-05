@@ -16,5 +16,8 @@ page_sections:
     free_text: "<strong>Conference Opening<br></strong>Welcome from the Conference
       chair - Mr Conference Chair"
   caption: ''
+menu:
+  main:
+    weight: 6
 
 ---

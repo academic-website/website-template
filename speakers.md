@@ -100,5 +100,8 @@ page_sections:
     person_organisation: Spoiler Pty Ltd
     person_bio: ''
   display: Five max per row
+menu:
+  main:
+    weight: 3
 
 ---
