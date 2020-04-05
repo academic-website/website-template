@@ -13,5 +13,3 @@ fields:
   type: text
   hidden: true
   default: posts
-pages:
-- blog.md
