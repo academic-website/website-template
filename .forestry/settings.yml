@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: _data/site-information.yml
+  label: Site information
+  match: "**/*"
 - type: heading
   label: Content
 - type: jekyll-pages
