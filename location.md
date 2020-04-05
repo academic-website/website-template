@@ -6,7 +6,7 @@ page_sections:
 - template: body-copy
   block: body-copy
   content: "<h2>Venue</h2><p>The conference is being held at the beautiful Grand Hyatt
-    Melbourne.</p>"
+    Melbourne.</p><p>Test</p>"
 - template: figure
   block: figure
   image: "/uploads/2018/07/30/25242293926_f0eff34493_c.jpg"
