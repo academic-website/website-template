@@ -12,8 +12,9 @@
     <div class="container">
         {% for post in site.posts %}
         <div class="post-list">
-            <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-            <p>{{ post.date | date_to_string }}{% if post.author %}{% unless post.author == empty %}, by {{ post.author }}}{% endunless %}{% endif %}</p>
+            <p class="post-date">{{ post.date | date_to_string }}</p>
+            <p class="post-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
+            {% if post.author %}{% unless post.author == empty %}<p class="post-author">&mdash; {{ post.author }}}</p>{% endunless %}{% endif %}
         </div>
         {% endfor %}
     </div>
