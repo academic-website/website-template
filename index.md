@@ -42,6 +42,8 @@ page_sections:
 - template: video-embed
   block: video-embed
   videos:
+  - share_link: https://youtu.be/T1RFAujSCJA
+    caption: Expedia Melbourne - City Video Guide
   - share_link: https://youtu.be/Cfq0d5Xf5ls
     caption: Lonely Planet Melbourne Video
   - share_link: https://vimeo.com/185276955
