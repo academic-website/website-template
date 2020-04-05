@@ -1,7 +1,7 @@
 ---
 title: Venue, travel and accommodation
 layout: page
-date: 2018-07-09 00:00:00 +0000
+date: 2018-07-09T00:00:00.000+00:00
 page_sections:
 - template: body-copy
   block: body-copy
@@ -15,7 +15,7 @@ page_sections:
     shared into the public domain using (CC0)'
 menu:
   main:
-    weight: 2
+    weight: 7
     title: Location
 
 ---
