@@ -10,9 +10,20 @@ fields:
 - type: text
   name: title
   label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Optional - content for metadata description tag
 - type: datetime
   name: date
   label: Date
+  default: now
 - type: blocks
   name: page_sections
   label: Page Sections
