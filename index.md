@@ -16,17 +16,17 @@ page_sections:
   block: three-column
   column_1:
     column_content: |-
-      ![](/template/uploads/2018/07/24/keynote.svg)
+      ![](/uploads/2018/07/24/keynote.svg)
 
       ### Keynotes
   column_2:
     column_content: |-
-      ![](/template/uploads/2018/07/24/presentation.svg)
+      ![](/uploads/2018/07/24/presentation.svg)
 
       ### Paper and poster presentations
   column_3:
     column_content: |-
-      ![](/template/uploads/2018/07/24/workshop.svg)
+      ![](/uploads/2018/07/24/workshop.svg)
 
       ### Workshops
   text_align_center: true
@@ -45,6 +45,7 @@ page_sections:
   - share_link: https://youtu.be/Cfq0d5Xf5ls
     caption: Lonely Planet Melbourne Video
   - share_link: https://vimeo.com/185276955
+    caption: ''
 - template: body-copy
   block: body-copy
   content: "<h2>Conference sponsors</h2>"
@@ -60,7 +61,7 @@ page_sections:
   - "/uploads/2018/07/26/logo-6.svg"
   - "/uploads/2018/07/26/logo-8.svg"
   - "/uploads/2018/07/26/logo-7.svg"
-date: 2018-07-08 14:00:00 +0000
+date: 2018-07-08T14:00:00.000+00:00
 menu:
   main:
     weight: 1
