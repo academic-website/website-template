@@ -5,7 +5,7 @@
                 <img src="{{ image_url | relative_url }}" alt="Photo of {{ person.person_name }}">
                 <div class="details">
                     <p class="person-name">{{ person.person_name }}</p>
-                    {% if person.person_organisation or person.person_title %}{% unless person.person_organisation == empty and person.person_title == empty %}<p><span class="person-title">{{ person.person_title}}</span> <span class="person-organisation">{{ person.person_organisation }}</span></p>{% endunless %}{% endif %}
+                    {% if person.person_organisation or person.person_title %}{% unless person.person_organisation == empty and person.person_title == empty %}<p class="person-details"><span class="person-title">{{ person.person_title}}</span> <span class="person-organisation">{{ person.person_organisation }}</span></p>{% endunless %}{% endif %}
                     {% if person.person_bio %}{% unless person.person_bio == empty %}<div class="bio">
                         {{ person.person_bio | markdownify }}
                     </div>{% endunless %}{% endif %}

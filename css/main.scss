@@ -395,16 +395,20 @@ body.noScroll {
 }
 .person-name {
     margin-top: 0;
-    font-size: 1.2em;
-    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1.6em;
+    //font-weight: bold;
+}
+.person-details {
+    margin-top: 0;
 }
 .person .person-title {
     font-weight: bold;
     display: block;
+    color: #038d2a;
 }
 .person .person-organisation {
     display: block;
-    color: #038d2a;
     text-transform: uppercase;
     font-size: smaller;
 }
