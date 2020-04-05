@@ -1,0 +1,48 @@
+---
+label: People
+hide_body: false
+fields:
+- type: field_group_list
+  name: people
+  label: People
+  description: Display speaker or project member photo and bios
+  fields:
+  - type: file
+    name: person_photo
+    label: Person photo
+    config:
+      maxSize: '1'
+  - type: text
+    name: person_name
+    label: Person name
+    config:
+      required: true
+  - type: text
+    name: person_title
+    label: Person title
+  - type: text
+    label: Person organisation
+    name: person_organisation
+  - type: textarea
+    name: person_bio
+    label: Person bio
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+- type: text
+  name: block
+  label: block
+  hidden: true
+  default: person-list
+- type: select
+  name: display
+  config:
+    source:
+      type: simple
+    options:
+    - One per row
+    - Two per row
+    - Five max per row
+  label: Display
+  description: Choose display format

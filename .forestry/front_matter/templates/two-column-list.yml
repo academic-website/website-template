@@ -1,0 +1,29 @@
+---
+label: Date table
+hide_body: false
+fields:
+- type: text
+  name: block
+  label: block
+  hidden: true
+  default: date-table
+- type: text
+  label: Table caption
+  name: caption
+  description: This optional caption will appear above the table
+- type: field_group_list
+  name: rows
+  label: Rows
+  config:
+    max: '100'
+  fields:
+  - type: text
+    name: date_or_time
+    label: Date or time
+  - type: textarea
+    label: 'Description '
+    name: free_text
+    config:
+      wysiwyg: true
+      schema:
+        format: html

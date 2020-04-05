@@ -1,0 +1,24 @@
+---
+label: Announcement
+hide_body: false
+fields:
+- type: text
+  name: block
+  label: block
+  default: announcement
+  hidden: true
+- type: text
+  name: announcement_text
+  label: Announcement text
+  config:
+    required: true
+- type: text
+  name: announcement_link
+  label: Announcement link
+- type: text
+  name: announcement_link_label
+  label: Announcement link label
+- type: boolean
+  name: hide
+  label: Hide
+  description: If you want this block not to show but don't want to delete it

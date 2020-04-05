@@ -1,0 +1,19 @@
+.container {
+    max-width: 1300px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+main {
+    margin-bottom: 4em;
+}
+main .page-title .container {
+    padding: 10px 4%;
+    background-color: #f4f4f4;
+}
+@media only screen and (min-width: 1140px) {
+    main .page-title,
+    .block {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}

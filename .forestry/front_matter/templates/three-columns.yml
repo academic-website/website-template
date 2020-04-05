@@ -1,0 +1,46 @@
+---
+label: Three columns
+hide_body: false
+fields:
+- type: text
+  default: three-column
+  label: block
+  name: block
+  hidden: true
+- type: field_group
+  name: column_1
+  label: Column 1
+  fields:
+  - type: textarea
+    name: column_content
+    label: Column content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+- type: field_group
+  name: column_2
+  label: Column 2
+  fields:
+  - type: textarea
+    name: column_content
+    label: Column content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+- type: field_group
+  name: column_3
+  label: Column 3
+  fields:
+  - type: textarea
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Column content
+    name: column_content
+- type: boolean
+  name: text_align_center
+  label: Text align center
+  description: If you want the text in your columns to be center aligned

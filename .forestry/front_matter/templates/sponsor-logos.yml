@@ -1,0 +1,28 @@
+---
+label: Sponsor logos
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: sponsor-logos
+- type: image_gallery
+  name: logos
+  label: Logos
+  description: Upload all logos to show (remember to optimise images first - see help)
+- type: select
+  name: max_per_row
+  config:
+    source:
+      type: simple
+    options:
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+  label: Maximum logos per row
+  description: Choose how many logos to appear in a row when website displayed on
+    desktop
+  default: '4'

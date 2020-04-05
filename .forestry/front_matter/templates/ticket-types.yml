@@ -1,0 +1,75 @@
+---
+label: Ticket types
+hide_body: false
+fields:
+- type: text
+  name: block
+  label: block
+  hidden: true
+  default: ticket-types
+- type: field_group_list
+  name: ticket_types
+  label: Ticket types
+  description: Add different ticket options
+  fields:
+  - type: text
+    name: ticket_name
+    label: Ticket name
+    config:
+      required: true
+  - type: textarea
+    name: ticket_details
+    label: Ticket details
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: purchase_link
+    label: Purchase link
+    description: If you have a direct purchase link for each ticket than include it
+      here
+  - type: select
+    config:
+      source:
+        type: datafiles
+        file: _data-ticket-types-yml
+        path: types
+    description: If you entered a URL in 'Purchase link', you can choose what text
+      to display on the button.
+    label: Purchase link label
+    name: purchase_link_label
+- type: select
+  name: max_per_row
+  config:
+    source:
+      type: simple
+    options:
+    - '3'
+    - '4'
+    - '5'
+  label: Maximum types per row
+  description: Choose how many ticket type cards to show in one row
+  default: '3'
+- type: text
+  name: purchase_link
+  label: Purchase link
+  description: If you have only one register/purchase page for all ticket types enter
+    the URL here and a register button will be displayed below the ticket type list.
+- type: select
+  name: purchase_link_label
+  config:
+    source:
+      type: datafiles
+      file: _data-ticket-types-yml
+      path: types
+    options:
+    - Register
+    - Buy now
+    - Purchase
+    - Register now
+    - Get your tickets now
+    - Purchase now
+  label: Purchase link label
+  description: 'If you entered a URL in ''Purchase link'', you can choose what text
+    to display on the button. '

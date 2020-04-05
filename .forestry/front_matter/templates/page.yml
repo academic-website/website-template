@@ -1,0 +1,37 @@
+---
+label: Page
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: page
+- type: text
+  name: title
+  label: Title
+- type: datetime
+  name: date
+  label: Date
+- type: blocks
+  name: page_sections
+  label: Page Sections
+  template_types:
+  - body-copy
+  - figure
+  - large-headline
+  - video-embed
+  - announcement
+  - three-columns
+  - people
+  - ticket-types
+  - date-table
+  - sponsor-logos
+pages:
+- call-for-papers.md
+- index.md
+- location.md
+- program.md
+- registration.md
+- speakers.md
+- type-test.md

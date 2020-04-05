@@ -1,0 +1,22 @@
+---
+label: Figure
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: figure
+- type: file
+  name: image
+  label: Image
+- type: text
+  name: caption
+  label: Caption
+  description: Its a good idea to give your image a caption.
+- type: text
+  name: attribution
+  label: Attribution text for images used under permission such as Creative Commons
+  description: 'Examaple: "Sydney Harbour Bridge, Australia" flickr photo by Lenny
+    K Photography https://flickr.com/photos/lennykphotography/15604546554 shared under
+    a Creative Commons (BY) license'

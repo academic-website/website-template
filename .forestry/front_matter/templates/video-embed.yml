@@ -1,0 +1,27 @@
+---
+label: Video embed
+hide_body: false
+fields:
+- type: text
+  name: block
+  label: block
+  default: video-embed
+  hidden: true
+- type: field_group_list
+  name: videos
+  label: Videos
+  config:
+    max: '10'
+  description: Embed one or more YouTube or Vimeo video(s)
+  fields:
+  - type: text
+    name: share_link
+    label: Share link
+    description: Copy the share link from your YouTube or Vimeo video. You can get
+      this from the share button.
+    config:
+      required: true
+  - type: text
+    name: caption
+    label: Caption
+    description: Caption to show under video.
