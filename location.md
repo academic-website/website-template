@@ -17,6 +17,5 @@ menu:
   main:
     weight: 2
     title: Location
-published: false
 
 ---
