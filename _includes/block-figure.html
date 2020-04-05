@@ -1,0 +1,8 @@
+<div class="block figure">
+    <div class="container">
+        <figure>
+          <img src="{{ section.image | relative_url }}" alt="{{ section.caption }}">
+            {% if section.caption or section.attribution %}{% unless section.caption == empty and section.attribution == empty %}<figcaption{% if section.attribution %} class="attribution"{% endif %}>{% unless section.caption == empty %}{{ section.caption }}{% endunless %}{% if section.attribution %}{% unless section.attribution == empty %} <cite>{{ section.attribution }}</cite>{% endunless %}{% endif %}</figcaption>{% endunless %}{% endif %}
+        </figure>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+{% include head.html %}
+{% include header.html %}
+<main>
+{% if page.url != "/" %}
+<div class="page-title">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+    </div>
+</div>
+{% endif %}
+<div class="block">
+    <div class="container">
+        <ul class="posts-list">
+            {% for post in page.posts %}<li>
+                <a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+            </li>{% endfor %}
+        </ul>
+    </div>
+</div>
+</main>
+{% include footer.html %}
+{% include foot.html %}
+
+{% comment %}
+  This layout is used by the jekyll-archives plugin to generate
+  archive pages for all posts
+{% endcomment %}

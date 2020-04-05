@@ -1,0 +1,15 @@
+<div class="block three-column">
+    <div class="container">
+        <div class="columns{% if section.text_align_center %} text-align-center{% endif %}">
+            <div class="column">
+                {% if section.column_1.column_content %}{{ section.column_1.column_content | markdownify }}{% endif %}
+            </div>
+            <div class="column">
+                {% if section.column_2.column_content %}{{ section.column_2.column_content  | markdownify }}{% endif %}
+            </div>
+            <div class="column">
+                {% if section.column_3.column_content %}{{ section.column_3.column_content  | markdownify }}{% endif %}
+            </div>
+        </div>
+    </div>
+</div>

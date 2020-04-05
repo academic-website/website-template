@@ -1,0 +1,9 @@
+<div class="block sponsor-logos">
+    <div class="container">
+        <ul class="logos max-{{ section.max_per_row }}-per-row">
+          {% for image in section.logos %}
+            <li><img src="{{ image | relative_url }}"></li>
+          {% endfor %}
+        </ul>
+    </div>
+</div>

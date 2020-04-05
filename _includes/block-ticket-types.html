@@ -1,0 +1,17 @@
+<div class="block ticket-types">
+    <div class="container">
+        <ul class="tickets max-{{ section.max_per_row }}-per-row">
+            {% for ticket in section.ticket_types %}<li class="ticket">
+                <header>
+                    <p class="ticket-name">{{ ticket.ticket_name }}</p>
+                </header>
+                {% if ticket.ticket_details %}<div class="ticket-details">{{ ticket.ticket_details | markdownify }}</div>{% endif %}
+                {% if ticket.purchase_link %}<footer>
+                    <a class="purchase button" href="{{ ticket.purchase_link }}">{% if ticket.purchase_link_label %}{{ ticket.purchase_link_label }}{% else %}Register{% endif %}</a>
+                </footer>{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% if section.purchase_link %}<p class="general-purchase"><a class="purchase button" href="{{ section.purchase_link }}">{% if section.purchase_link_label %}{{ section.purchase_link_label }}{% else %}Register{% endif %}</a>{% endif %}
+    </div>
+</div>

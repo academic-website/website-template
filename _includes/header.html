@@ -1,0 +1,31 @@
+<header class="site-header">
+    <div class="banner clearfix">
+        <div class="container">
+            <div class="logo"><a href="{{ site.baseurl }}/"><img src="{{ "/img/placeholer-logo-8.svg"  | relative_url }}" alt=""/></a></div>
+            <p class="tag-line">Conference {{ site.data.site-information.conference-year }}</p>
+            <p class="where-when">{{ site.data.site-information.conference-date }} | {{ site.data.site-information.conference-location }}</p>
+        </div>
+    </div>
+    <div class="hero">
+        <img src="{{ "/img/melbourne-skyline-yarra-overlay.jpg" | relative_url }}" alt="">
+        <div class="container">
+            <div class="hero-content">
+                {% if page.url == "/" %}<h1>{% else %}<p>{% endif %}{{ site.data.site-information.conference-title }}{% if page.url == "/" %}</h1>{% else %}</p>{% endif %}
+            </div>
+        </div>
+    </div>
+    {% comment %}
+    	Displays the site's navigation using the jekyll-menus plugin
+    {% endcomment %}
+    {% assign url = page.url | remove:'index.html' %}
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="navigation">
+                {% for item in site.menus.main %}<li class="{% if url == item.url %}current{% endif %}">
+                    <a href="{{ item.url | absolute_url }}"{% if item.target %} target="_blank" {% endif %}>{{ item.title }}</a>
+                </li>{% endfor %}
+            </ul>
+            <button class="mobile-menu-button">Menu</button>
+        </div>
+    </nav>
+</header>

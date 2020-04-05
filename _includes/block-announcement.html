@@ -1,0 +1,5 @@
+<div class="block announcement{% if section.hide %} hidden{% endif %}">
+    <div class="container">
+        <p>{{ section.announcement_text }}{% if section.announcement_link %}{% unless section.announcement_link == empty %} <a class="button" href="{{ section.announcement_link }}">{% if section.announcement_link_label %}{% unless section.announcement_link_label == empty %}{{ section.announcement_link_label }}{% else %}Go{% endunless %}{% else %}Go{% endif %}</a>{% endunless %}{% endif %}</p>
+    </div>
+</div>

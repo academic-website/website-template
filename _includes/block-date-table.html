@@ -1,0 +1,11 @@
+<div class="block date-table">
+    <div class="container">
+        <table class="dates">
+            {% if section.caption %}{% unless section.caption == empty %}<caption>{{ section.caption }}</caption>{% endunless %}{% endif %}
+            {% for row in section.rows %}<tr>
+                <th>{{ row.date_or_time }}</th>
+                <td>{{ row.free_text }}</td>
+            </tr>{% endfor %}
+        </table>
+    </div>
+</div>
